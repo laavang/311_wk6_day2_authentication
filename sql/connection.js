@@ -6,7 +6,7 @@ class Connection {
       console.log('creating mysql connection...')
       this.pool = mysql.createPool({
         connectionLimit: 100,
-        host: 'localhost',
+        host: '35.239.60.3',
         user: 'root',
         password: 'password',
         database: 'admin'
@@ -22,3 +22,5 @@ class Connection {
 const instance = new Connection()
 
 module.exports = instance;
+
+//
